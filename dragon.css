@@ -113,7 +113,17 @@ main ul {
 }
 
 
+.class-column  {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 
+.species-column  {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 
 footer {
         font-size: 0.75em;
@@ -123,5 +133,6 @@ footer {
         text-align: center;
         background-color: #f4ebd2;
     }
+
 
 
