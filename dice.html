@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide to DND 5e: Dice Roller</title>
+    <link rel="stylesheet" href="dragon.css">
+    <link rel="icon" href="dnd dice logo.png">
+    <meta name="device-width" content="initial-scale=1.0">
+    <meta name="description" content="A random number generator to play Dungeons and Dragons 5th Edition.">
+</head>
+
+
+
+<body>
+        <header>
+            <h1><a href="index.html">Beginner's Guide to Dungeons and Dragons 5th Edition</a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="class.html">Class</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="background.html">Background</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="dice.html">Dice Roller</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <img src="dnd dice diceroller.png" alt="dice roller" class="center">
+            <p><b>Dnd uses a 20 sided die (d20) for most actions.</b></p>
+            <p>However, the game might also need other dice like d4, d6, d8, d12, and d100.</p>
+            <p>You can use this virtual dice roller to simulate rolling dice for your D&D adventures!</p>
+            
+            <p id = "result"></p>
+            <button onclick="random()">Roll a d20</button>
+
+            <script>
+                function random() {
+                    var result = Math.floor(Math.random() * 20) + 1;
+                    document.getElementById("result").innerHTML = "You rolled a " + result + "!";
+                }
+            </script>
+
+            <p id = "result5"></p>
+            <button onclick="random5()">Roll a d12</button>
+
+            <script>
+                function random5() {
+                    var result = Math.floor(Math.random() * 12) + 1;
+                    document.getElementById("result5").innerHTML = "You rolled a " + result + "!";
+                }
+            </script>
+            
+            <p id = "result2"></p>
+            <button onclick="random2()">Roll a d10</button>
+
+            <script>
+                function random2() {
+                    var result = Math.floor(Math.random() * 10) + 1;
+                    document.getElementById("result2").innerHTML = "You rolled a " + result + "!";
+                }
+            </script>
+
+            <p id = "result3"></p>
+            <button onclick="random3()">Roll a d6</button>
+
+            <script>
+                function random3() {
+                    var result = Math.floor(Math.random() * 6) + 1;
+                    document.getElementById("result3").innerHTML = "You rolled a " + result + "!";
+                }
+            </script>
+
+            <p id = "result4"></p>
+            <button onclick="random4()">Roll a d4</button>
+
+            <script>
+                function random4() {
+                    var result = Math.floor(Math.random() * 4) + 1;
+                    document.getElementById("result4").innerHTML = "You rolled a " + result + "!";
+                }
+            </script>
+
+            
+
+            <p id = "result6"></p>
+            <button onclick="random6()">Roll a d100</button>
+
+            <script>
+                function random6() {
+                    var result = Math.floor(Math.random() * 100) + 1;
+                    document.getElementById("result6").innerHTML = "You rolled a " + result + "!";
+                }
+            </script>
+
+            <div class="video-container"> 
+                <video width="568" height="320" controls>
+                    <source src="dice broll.mp4" type="video/mp4">
+                    Your browser does not support the video tag 
+                </video>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>javaugh6@asu.edu</p>
+        </footer>
+        
+        
+     </div>
+</body>
+
+</html>

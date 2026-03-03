@@ -97,6 +97,17 @@ main {
     }
 
 
+td {
+    border: 2px solid #35abb8;
+    padding: 0.5em;
+    text-align: center;
+}
+
+th {
+    border: 2px solid #35abb8;
+    padding: 0.5em;
+}
+
 a{
     text-decoration: none;
 }
@@ -124,8 +135,20 @@ main ul {
         display: flex;
         flex-direction: column;
     }
+    
+.video-container {
+    padding-top: 10px;
+}
 
-footer {
+.center {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 20%;
+
+}
+
+    footer {
         font-size: 0.75em;
         font-style: italic;
         font-family: Georgia, 'Times New Roman', serif;
@@ -133,6 +156,3 @@ footer {
         text-align: center;
         background-color: #f4ebd2;
     }
-
-
-
